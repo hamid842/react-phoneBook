@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.btn-info {
+  width: 170px;
+}
+
+.tableHeader {
+  background-color: #41b8c5;
+}
+
+#toggler3 {
+  float: right;
+}
