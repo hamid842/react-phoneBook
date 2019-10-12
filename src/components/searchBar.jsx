@@ -21,9 +21,9 @@ class SearchBar extends Component {
                             <input id="inputLname" type="text" className="rounded-sm" placeholder="Enter last name" />
                             <input id="inputBdate" type="text" className="rounded-sm" placeholder="Enter birth date" />
                             <input id="quickSearchBtn" type="button" className="rounded-sm" value="Search"
-                                onclick="quickSearch()" />
+                                onClick={() => this.props.onQuickSearch()} />
                             <input id="quickRefreshBtn" type="button" className="rounded-sm" value="Refresh"
-                                onclick="quickSearchRefreshBtn()" />
+                            />
                         </CardBody>
                     </Card>
                 </UncontrolledCollapse>
@@ -35,9 +35,9 @@ class SearchBar extends Component {
                             <input id="inputAdvBdate" type="text" className="rounded-sm" placeholder="Enter birth date" />
                             <input id="inputAdvEmail" type="text" className="rounded-sm" placeholder="Enter email address" />
                             <input id="advSearchBtn" type="button" className="rounded-sm" value="Search"
-                                onclick="advancedSearch()" />
+                            />
                             <input id="advRefreshBtn" type="button" className="rounded-sm" value="Refresh"
-                                onclick="advancedSearchRefreshBtn()" />
+                            />
                         </CardBody>
                     </Card>
                 </UncontrolledCollapse>

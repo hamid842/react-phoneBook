@@ -5,15 +5,15 @@ import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
 class MegaSearch extends Component {
     state = {}
 
-    megaSearch = (e) => {
-        return this.props.data.filter(e => e.value);
+    megaSearch = () => {
+
     };
 
     render() {
         return (
             <div>
                 <InputGroup>
-                    <InputGroupAddon addonType="prepend" onKeyUp={this.megaSearch} >
+                    <InputGroupAddon addonType="prepend" onKeyUp={this.megaSearch}>
                         Search</InputGroupAddon>
                     <Input placeholder="search for ..." />
                 </InputGroup>

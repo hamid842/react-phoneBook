@@ -21,7 +21,7 @@ class MyModal extends React.Component {
         return (
             <div>
                 <Button color="info" id="toggler3" onClick={this.toggle}>Add New Contact</Button>
-                <Modal isOpen={this.state.modal} modalTransition={{ timeout: 600 }}
+                <Modal id="modal" isOpen={this.state.modal} modalTransition={{ timeout: 600 }}
                     backdropTransition={{ timeout: 1000 }}
                     toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>Contact Info</ModalHeader>
